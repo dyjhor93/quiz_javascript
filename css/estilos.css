@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    /*height: 70px;*/
+    padding: 0.8rem 0px 0.8rem 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+#contenido{
+    width: 100%;
+}
+P{
+    font-size: 1.2rem;
+}
+.text-name{
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    float: right;
+    background-color: #000000;
+}
+
+.fondo-negro{
+    background-color: #000000;
+    height: 2rem;
+}
+.text-white{
+    color: #ffffff;
+}
+.text-black{
+    color: #000000;
+}
+.text-center{
+    text-align: center;
+}
+#test{
+    width: 100%;
+    display: none;
+    flex-flow: row;
+}
+#resultado{
+    text-align: center;
+    display: none;
+}
+#test article{
+    float: left;
+    width: 70%;
+    background-color: #ecfffc;
+    margin: 1rem;
+    padding: 1rem;
+}
+#test aside{
+    float: right;
+    width: 30%;
+    background-color: #ecfffc;
+    margin: 1rem;
+    
+}
+.flex{
+    display: flex;
+    margin: 1rem;
+}
+.row{
+    flex-flow: row;
+    width: 100%;
+}
+#login{
+    margin: auto;
+    width: 90%;
+    padding: 3rem;
+    background-color: #ecfffc;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#cajon{
+    text-align: center;
+    margin: 1rem;
+}
+#cajon .row p{ 
+    background-color: #00eeee;
+    margin: 1rem;
+}
+.tema-fondo{
+    background-color: #ff0000;
+}
+.tema-color{
+    color: #ff0000;
+}
+.borde{
+    border: 1px solid #000000;
+}
+#quiz{
+    height: 2.5rem;
+    display: none;
+    flex-flow: row;
+}
+#q{
+    width: 70%;float: left;
+}
+
+.text-shadow-black{
+    text-shadow: 2px 2px 5px black;
+}
+.text-shadow-white{
+    text-shadow: 2px 2px 5px white;
+}
+
+@media only screen and (max-width: 768px) {
+    #test article, #test aside {
+        display: block;
+        width: 100%;
+    }
+
+    #test, #q, .text-name{
+        flex-flow: column;
+        width: 100%;
+        float: none;
+    }
+    
+    
+}

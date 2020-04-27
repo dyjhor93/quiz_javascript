@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--deivisjoro@gmail.com-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='js/javascript.js'></script>
+    
+</head>
+<body>
+    <header id="header" class="tema-fondo text-white"><h1>Test Evaluativo</h1></header>
+    <div id="quiz" class="fondo-negro flex">
+        <div class="row">
+            <h1 id="q" class="tema-color">Quiz</h1>
+            <p id="name_" class="text-white text-center text-name">Nombre</p>
+        </div>
+        
+    </div>
+    <div id='contenido'>
+        <article id="login">
+            <h1 class="tema-color">Registre sus datos</h1>
+            <p class="tema-color">Nombres y apellidos</p>
+            <input id="name" type="text" />
+            <input type="button" value="Continuar" onclick="login()"/>
+        </article>
+        <div id="test">
+            <article id="panel">
+                <BR>
+                <h2 id="preguntactual" class="text-white text-shadow-black">Sin pregunta</h2>
+                <BR>
+                <BR>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="res" id="s-1" value="1"></td><td><p>A) </p></td><td><p id="r-1"></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="res" id="s-2" value="2"></td><td><p>B) </p></td><td><p id="r-2"></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="res" id="s-3" value="3"></td><td><p>C) </p></td><td><p id="r-3"></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="res" id="s-4" value="4"></td><td><p>D) </p></td><td><p id="r-4"></p></td>
+                    </tr>
+                </table>
+                <BR>
+                <br>
+                <input id="contestar" type="button" value="Contestar" onclick="contestar();">
+            </article>
+            <article id="resultado">
+                <h1 id="rname"></h1>
+                <p id="rresult"></p>
+            </article>
+            <aside>
+                
+                
+                <div id="cajon" class="borde">
+                    <h2 class="tema-fondo text-center">Preguntas</h2>
+                    <div class="flex borde  text-shadow-black text-white">
+                        <div class="row">
+                            <div><p id="c-1">1</p></div>
+                            <div><p id="c-4">4</p></div>
+                            <div><p id="c-7">7</p></div>
+                        </div>
+                        <div class="row">
+                            <div><p id="c-2">2</p></div>
+                            <div><p id="c-5">5</p></div>
+                            <div><p id="c-8">8</p></div>
+                        </div>
+                        <div class="row">
+                            <div><p id="c-3">3</p></div>
+                            <div><p id="c-6">6</p></div>
+                            <div><p id="c-9">9</p></div>
+                        </div>
+                    </div>
+                    <p id="contestadas"></p>
+                    <div> <progress id="progreso" value="0" max="9">0%</progress> </div>
+                    <div id="navegacion">
+                        <p id="act"></p><input id="ant" type="button" value="Anterior" onclick="anterior()"/><input id="sig" type="button" value="Siguiente" onclick="siguiente()"/>
+                    </div>
+                </div>
+            </aside>
+        </div>
+     </div>
+     
+</body>
+</html>
